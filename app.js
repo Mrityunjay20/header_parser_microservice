@@ -5,7 +5,7 @@ const express = require('express');
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/api/whoami", (req, res) => {
     var ipadress = req.ip;
     var language = req.acceptsLanguages();
     var software=req.get("User-Agent");
